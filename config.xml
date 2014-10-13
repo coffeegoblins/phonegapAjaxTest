@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.coffeegoblins.game" version="3.0.0" versionCode="11" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- versionCode is optional and Android only -->
+
+    <preference name="phonegap-version" value="3.5.0" />
+
+    <name>JavaScript Game</name>
+
+    <description>
+        An example for phonegap build docs.
+    </description>
+
+    <author href="http://coffeegoblins.com" email="coffeegoblins@gmail.com">
+        Kevin Fawcett
+    </author>
+
+    <gap:config-file platform="android" parent="/manifest">
+        <application android:debuggable="true" />
+        <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+        <uses-permission android:name="android.permission.INTERNET" />
+    </gap:config-file>
+
+    <access origin="*" subdomains="true" />
+    <access origin="..." subdomains="true" />
+
+    <feature name="http://api.phonegap.com/1.0/network" />
+    <Capability Name="ID_CAP_NETWORKING" />
+</widget>
