@@ -11,6 +11,7 @@ testRequest.onreadystatechange = function ()
         }
 
         document.body.innerHTML = testRequest.status.toString();
+        document.body.innerHTML += testRequest.responseText;
     }
 };
 
