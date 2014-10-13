@@ -4,11 +4,13 @@ testRequest.onreadystatechange = function ()
 {
     if (testRequest.readyState === 4)
     {
-        console.log("4");
+        document.body.innerHTML = "4";
         if (testRequest.status === 200)
         {
             console.log("200");
         }
+
+        document.body.innerHTML = testRequest.status.toString();
     }
 };
 
